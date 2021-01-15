@@ -5,8 +5,15 @@ var tableData = data;
 // Clearing Data
 var tbody = d3.select("tbody");
 
+//get button and input references
+var button = d3.select("#filter-btn");
+var input = d3.select("#datetime");
+var inputcity = d3.select("#city");
+var inputstate = d3.select("#state");
+var inputcountry = d3.select("#country");
+var inputshape = d3.select("#shape");
 
-// Creating Row and cell
+// Creating Fuction, Row and cell
 
 function buildData(data) {
     tbody.html("");
